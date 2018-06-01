@@ -1,6 +1,13 @@
 # Imports
 import pygame
 import random
+import sys
+import os
+
+if getattr(sys, 'frozen', False):
+    current_path = os.path.dirname(__file__)
+else:
+    current_path = os.path.dirname(__file__)
 
 # Initialize game engine
 pygame.init()
@@ -25,22 +32,22 @@ YELLOW = (255, 255, 0)
 GREEN = (100, 255, 100)
 
 # Fonts
-FONT_SM = pygame.font.Font(None, 24)
-FONT_MD = pygame.font.Font("assets/fonts/space_age.ttf", 32)
-FONT_LG = pygame.font.Font("assets/fonts/space_age.ttf", 64)
-FONT_XL = pygame.font.Font("assets/fonts/space_age.ttf", 96)
+FONT_SM = pygame.font.Font(current_path + "/assets/fonts/space_age.ttf", 24)
+FONT_MD = pygame.font.Font(current_path + "/assets/fonts/space_age.ttf", 32)
+FONT_LG = pygame.font.Font(current_path + "/assets/fonts/space_age.ttf", 64)
+FONT_XL = pygame.font.Font(current_path + "/assets/fonts/space_age.ttf", 96)
 
 # Images
-ship_img = pygame.image.load('assets/images/player.png')
-laser_img = pygame.image.load('assets/images/laserRed.png')
-mob_img = pygame.image.load('assets/images/enemyShip.png')
-bomb_img = pygame.image.load('assets/images/laserGreen.png')
-full_shield = pygame.image.load('assets/images/FullShield.png')
-first_hit = pygame.image.load('assets/images/Shield2.png')
-second_hit = pygame.image.load('assets/images/Shield4.png')
-last_hit = pygame.image.load('assets/images/EmptyShield.png')
-mob_purple = pygame.image.load('assets/images/enemyShipPurple.png')
-space = pygame.image.load('assets/images/background.jpg')
+ship_img = pygame.image.load(current_path + '/assets/images/player.png')
+laser_img = pygame.image.load(current_path + '/assets/images/laserRed.png')
+mob_img = pygame.image.load(current_path + '/assets/images/enemyShip.png')
+bomb_img = pygame.image.load(current_path + '/assets/images/laserGreen.png')
+full_shield = pygame.image.load(current_path + '/assets/images/FullShield.png')
+first_hit = pygame.image.load(current_path + '/assets/images/Shield2.png')
+second_hit = pygame.image.load(current_path + '/assets/images/Shield4.png')
+last_hit = pygame.image.load(current_path + '/assets/images/EmptyShield.png')
+mob_purple = pygame.image.load(current_path + '/assets/images/enemyShipPurple.png')
+space = pygame.image.load(current_path + '/assets/images/background.jpg')
 
 # Stages
 START = 0
