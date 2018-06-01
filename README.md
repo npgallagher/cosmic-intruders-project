@@ -25,3 +25,6 @@ be destroyed and the game will end.
 ![alt text](https://github.com/npgallagher/cosmic-intruders-project/blob/master/screenshots/SplashScreen.PNG "Start Screen")
 
 ![alt text](https://github.com/npgallagher/cosmic-intruders-project/blob/master/screenshots/Gameplay.PNG "Gameplay")
+
+## Downloads
+(https://github.com/npgallagher/cosmic-intruders-project/releases/tag/0.9 "Game Download")
