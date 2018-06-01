@@ -18,3 +18,6 @@ be destroyed and the game will end.
 * The last row of enemies take 2 hits
 * Your ship take 3 hits
 * The shield icon in the bottom left displays your health
+
+## Screenshots
+![alt text](https://github.com/npgallagher/cosmic-intruders-project/blob/master/screenshots/SplashScreen.PNG "Start Screen")
